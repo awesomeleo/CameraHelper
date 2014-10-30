@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+ 	android:orientation="vertical" 
+ 	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+		<TextView android:id="@+id/unscaned" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			 android:layout_centerHorizontal="true"
+			android:textColor="#BF3EFF" />
+
+		<Button
+		    android:id="@+id/unscanedEnter"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="@string/enterButton" />
+
+</LinearLayout>

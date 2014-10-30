@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/devices"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    tools:context="cn.wp.tool.DeviceListActivity"
+    tools:ignore="MergeRootFrame" >
+<TextView
+    android:id="@+id/routeDelayName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:gravity="center_vertical|left"
+    android:text="@string/routeDelayName"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+<TextView
+    android:id="@+id/routeDelay"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/routeDelayName"
+    android:layout_alignBottom="@+id/routeDelayName"
+    android:layout_toRightOf="@+id/routeDelayName"
+    android:gravity="center_vertical|left"
+    android:text="@string/routeDelay"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+<TextView
+    android:id="@+id/deviceInfo"
+    android:layout_marginTop="20dp"
+    android:layout_below="@+id/routeDelayName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:gravity="center_vertical|left"
+    android:text="@string/device_scaned"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+<TextView
+    android:id="@+id/onlineCameraNum"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/deviceInfo"
+    android:layout_alignBottom="@+id/deviceInfo"
+    android:layout_marginLeft="32dp"
+    android:layout_toRightOf="@+id/deviceInfo"
+    android:gravity="center_vertical|left"
+    android:text="@string/online"
+    android:textAppearance="?android:attr/textAppearanceSmall" />
+<ListView 
+    android:layout_width="fill_parent"  
+    android:layout_height="wrap_content"  
+   	android:id="@+id/deviceList" 
+   	android:layout_below="@+id/deviceInfo"
+   	android:layout_marginTop="10dp"
+  	android:dividerHeight="3dip"
+ 	android:cacheColorHint="#00000000"
+/>
+ </RelativeLayout>

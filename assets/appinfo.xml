@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AppInfo>
+    <!-- item names must be equal with table column names!!! 参见UserData.java -->
+    <PackageName>cn.wp.tool</PackageName>
+    <VersionCode>1.6</VersionCode>
+</AppInfo>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserData>
+    <!-- item names must be equal with table column names!!! 参见UsersData.java -->
+
+    <!-- 项目名称 test:V100R000WsTest,慧沃:V100R001HuiWo,联想:V100R002LianXiang, 终端:V100R004Develop, Web:V100R005Web,
+    wegarden:V100R006WeGarden, dailyBuild:V100R007DailyBuild, 2-1:V100R008WebNew, 2-1正式:V100R009Yao,
+    2-1正式2:V100R009Yao2 -->
+    <ProjectName>V100R004Develop</ProjectName>
+
+    <!-- 支持的摄像头类型 0:all, 1:Stub, 2:ZAG, 3:ONVIF 其他值为ZAG -->
+    <CameraType>0</CameraType>
+    
+    <!-- 配置使用主码流:MainProfile或者从码流:SubProfile -->
+    <StreamIndex>MainProfile</StreamIndex>
+
+    <!-- 配置访问摄像头所用的用户名 -->
+    <cameraUserName>admin</cameraUserName>
+
+    <!-- 配置访问摄像头的密码 -->
+    <cameraPwd>ws20130620</cameraPwd>
+
+    <!-- 摄像头ID的生成方式 Name、ID、NameID-名字与id组合、UUID-自生成1 -->
+    <camIdGeneMode>UUID</camIdGeneMode>
+
+    <!-- 获取支持的视频描述 -->
+    <getVideoXml>getVideoEncoderConfigurationOptions.xml</getVideoXml>
+
+    <!-- 设置当前使用的视频描述 -->
+    <setVideoXml>setVideoEncoderConfiguration.xml</setVideoXml>
+
+    <!-- 本地软编码所支持最大分辨率的宽度 -->
+    <SupportedWidth>640</SupportedWidth>
+
+    <!-- 本地软编码所支持最大分辨率的高度 -->
+    <SupportedHeight>360</SupportedHeight>
+
+    <!-- 默认语言码。低字节保存的是ISO639-2语言码 -->
+    <LanguageCode>0</LanguageCode>
+
+    <!-- 最多可支持的视频路数 -->
+    <MaxCameraCount>8</MaxCameraCount>
+
+    <!-- 处理原始流所用库: livecontroller为livecontroller.jar, wecore为libwecore.so -->
+    <LibProcessStream>wecore</LibProcessStream>
+
+</UserData>

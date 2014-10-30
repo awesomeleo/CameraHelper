@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/camera_info"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="cn.wp.tool.DeviceListActivity"
+    tools:ignore="MergeRootFrame" >
+    
+<TextView
+    android:id="@+id/cameraInfoTitle"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="@string/cameraInfo"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+<TextView
+    android:id="@+id/cameraSnTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/cameraInfoTitle"
+    android:layout_marginLeft="26dp"
+    android:layout_marginTop="37dp"
+    android:gravity="center_vertical|left"
+    android:text="@string/cameraSN"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<TextView
+    android:id="@+id/cameraSn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignTop="@+id/cameraSnTitle"
+    android:layout_marginLeft="25dp"
+    android:layout_toRightOf="@+id/cameraNameTitle"
+    android:gravity="center_vertical|left"
+    android:text="@string/unrecognize"
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    android:textColor="#336699"/>
+
+<TextView
+    android:id="@+id/cameraNameTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/cameraSnTitle"
+    android:layout_below="@+id/cameraSnTitle"
+    android:layout_marginTop="25dp"
+    android:gravity="center_vertical|left"
+    android:text="@string/cameraName"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<TextView
+    android:id="@+id/cameraName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/cameraSn"
+    android:layout_alignTop="@+id/cameraNameTitle"
+    android:gravity="center_vertical|left"
+    android:text="@string/unrecognize"
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    android:textColor="#336699"/>
+
+<TextView
+    android:id="@+id/cameraIpTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/cameraNameTitle"
+    android:layout_below="@+id/cameraNameTitle"
+    android:layout_marginTop="25dp"
+    android:gravity="center_vertical|left"
+    android:text="@string/cameraIP"
+    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+<TextView
+    android:id="@+id/cameraIp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/cameraName"
+    android:layout_alignTop="@+id/cameraIpTitle"
+    android:gravity="center_vertical|left"
+    android:text="@string/unrecognize"
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    android:textColor="#336699" />
+
+<TextView
+    android:id="@+id/cameraMACTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/cameraIpTitle"
+    android:layout_below="@+id/cameraIpTitle"
+    android:layout_marginTop="25dp"
+    android:gravity="center_vertical|left"
+    android:text="@string/cameraMAC"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<TextView
+    android:id="@+id/cameraMAC"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/cameraIp"
+    android:layout_alignTop="@+id/cameraMACTitle"
+    android:gravity="center_vertical|left"
+    android:text="@string/unrecognize"
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    android:textColor="#336699"/>
+
+<TextView
+    android:id="@+id/cameraNetTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/cameraMACTitle"
+    android:layout_below="@+id/cameraMACTitle"
+    android:layout_marginTop="25dp"
+    android:gravity="center_vertical|left"
+    android:text="@string/cameraNet"
+    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+
+<TextView
+    android:id="@+id/cameraNet"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/cameraMAC"
+    android:layout_alignTop="@+id/cameraNetTitle"
+    android:gravity="center_vertical|left"
+    android:text="@string/unconnWifi"
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    android:textColor="#336699" />
+<TextView
+    android:id="@+id/cameraNetRssiTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/cameraNetTitle"
+    android:layout_below="@+id/cameraNetTitle"
+    android:layout_marginTop="25dp"
+    android:gravity="center_vertical|left"
+    android:text="@string/cameraRssi"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+<TextView
+    android:id="@+id/cameraNetRssi"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/cameraNet"
+    android:layout_alignTop="@+id/cameraNetRssiTitle"
+    android:gravity="center_vertical|left"
+    android:text="@string/unrecognize"
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    android:textColor="#336699"/>
+<LinearLayout 
+ 	android:orientation="horizontal" 
+ 	android:layout_width="fill_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+	android:layout_height="wrap_content">
+<Button
+    android:id="@+id/scanWifi"
+    android:text="@string/scan_wifi"
+	android:layout_height="wrap_content" 
+	android:layout_width="fill_parent" 
+	android:layout_weight = "1"/>
+
+<Button
+    android:id="@+id/getCameraVideo"
+    android:text="@string/cameraVideo"
+	android:layout_height="wrap_content" 
+	android:layout_width="fill_parent" 
+	android:layout_weight = "1"/>
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="20dp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+   <TextView
+    android:id="@+id/wifiInfo"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical|left"
+    android:text="@string/scanedWifi"
+    android:layout_centerHorizontal="true"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+<ListView 
+    android:layout_width="fill_parent"  
+    android:layout_height="wrap_content"  
+    android:layout_below="@+id/wifiInfo"
+   	android:id="@+id/wifiList" 
+ 	android:cacheColorHint="#00000000"
+/> 
+<ProgressBar
+    android:id="@+id/scanWifiProgressBar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true" />
+    </RelativeLayout>

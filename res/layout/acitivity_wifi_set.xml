@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+ 	android:orientation="vertical" 
+ 	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+<EditText
+    android:id="@+id/inputP"
+    android:layout_width="fill_parent"  
+    android:layout_height="wrap_content"
+    android:hint="@string/inputDesc" 
+    android:ems="10">
+</EditText>
+<LinearLayout 
+ 	android:orientation="horizontal" 
+ 	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+<Button
+    android:id="@+id/enterP"
+	android:layout_height="wrap_content" 
+	android:layout_width="fill_parent" 
+	android:layout_weight = "1"
+    android:text="@string/enterButton" />
+
+<Button
+    android:id="@+id/cancelP"
+	android:layout_height="wrap_content" 
+	android:layout_width="fill_parent" 
+	android:layout_weight = "1"
+    android:text="@string/cancelButton" />
+</LinearLayout>
+</LinearLayout>

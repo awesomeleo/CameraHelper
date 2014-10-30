@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+<LinearLayout
+		android:layout_alignParentLeft="true"
+    	android:layout_alignParentTop="true"
+     	android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent">
+    <io.vov.vitamio.widget.CenterLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <SurfaceView
+            android:id="@+id/surface"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center" >
+        </SurfaceView>
+    </io.vov.vitamio.widget.CenterLayout>
+  
+</LinearLayout>
+
+<RelativeLayout 
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+    >
+    
+
+<!--  
+<LinearLayout 
+     android:orientation="vertical"
+     android:layout_width="100dp"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:layout_height="fill_parent">
+<Button
+    android:id="@+id/ctrlPtzHome"
+	android:layout_height="wrap_content" 
+	android:layout_width="100dp" 
+	android:layout_weight = "1"
+    android:text="@string/ctrlPtzHome" />
+<Button
+    android:id="@+id/ctrlPtzUp"
+	android:layout_height="wrap_content" 
+	android:layout_width="100dp" 
+	android:layout_weight = "1"
+    android:text="@string/ctrlPtzUp" />    
+<Button
+    android:id="@+id/ctrlPtzDown"
+	android:layout_height="wrap_content" 
+	android:layout_width="100dp" 
+	android:layout_weight = "1"
+    android:text="@string/ctrlPtzDown" />
+<Button
+    android:id="@+id/ctrlPtzLeft"
+	android:layout_height="wrap_content" 
+	android:layout_width="100dp" 
+	android:layout_weight = "1"
+    android:text="@string/ctrlPtzLeft" />
+<Button
+    android:id="@+id/ctrlPtzRight"
+	android:layout_height="wrap_content" 
+	android:layout_width="100dp" 
+	android:layout_weight = "1"
+    android:text="@string/ctrlPtzRight" />
+<Button
+    android:id="@+id/ctrlPtzSave"
+	android:layout_height="wrap_content" 
+	android:layout_width="100dp" 
+	android:layout_weight = "1"
+    android:text="@string/ctrlPtzSave" />
+</LinearLayout>
+-->
+<Button
+    android:id="@+id/ctrlPtzUp"
+    android:layout_width="70dp"
+	android:layout_height="40dp"
+	android:layout_above="@+id/ctrlPtzHome"
+	android:layout_alignLeft="@+id/ctrlPtzHome"
+    android:text="@string/ctrlPtzUp" />    
+<Button
+    android:id="@+id/ctrlPtzLeft"
+    android:layout_width="70dp"
+	android:layout_height="40dp"
+	android:layout_toLeftOf="@+id/ctrlPtzHome"
+	android:layout_alignTop="@+id/ctrlPtzHome"
+    android:text="@string/ctrlPtzLeft" />
+<Button
+    android:id="@+id/ctrlPtzHome"
+    android:layout_width="70dp"
+	android:layout_height="40dp"
+	android:layout_above="@+id/ctrlPtzDown"
+	android:layout_toLeftOf="@+id/ctrlPtzRight"
+    android:text="@string/ctrlPtzHome" />
+<Button
+    android:id="@+id/ctrlPtzDown"
+    android:layout_width="70dp"
+	android:layout_height="40dp"
+	android:layout_alignParentBottom="true"
+	android:layout_toLeftOf="@+id/ctrlPtzSave"
+	android:text="@string/ctrlPtzDown" />
+<Button
+        android:id="@+id/osdChange"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/ctrlPtzRight"
+        android:text="@string/osdChange" />
+<Button
+        android:id="@+id/ctrlPtzRight"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/ctrlPtzSave"
+        android:text="@string/ctrlPtzRight" />
+<Button
+    android:id="@+id/ctrlPtzSave"
+    android:layout_width="70dp"
+    android:layout_height="40dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:text="@string/ctrlPtzSave" />
+</RelativeLayout>
+</RelativeLayout>

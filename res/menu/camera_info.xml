@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="cn.wp.tool.DeviceListActivity" >
+
+
+<item  
+    android:id="@+id/rebootCamera"
+    android:title="@string/reboot_camera"
+   android:showAsAction="ifRoom|withText"  
+/>
+
+</menu>

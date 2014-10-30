@@ -1,0 +1,13 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+ 	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+<ProgressBar
+    android:id="@+id/downloading"
+    android:layout_width="fill_parent"
+    android:layout_height="20dp"
+    android:layout_gravity="center_vertical" 
+	android:max="100"
+	android:progress="5" 
+	style="?android:attr/progressBarStyleHorizontal"/>
+</LinearLayout>
